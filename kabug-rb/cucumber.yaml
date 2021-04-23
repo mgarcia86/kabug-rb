@@ -1,0 +1,11 @@
+---
+default: -p headless -p json -p pretty -p html
+ci: -p headless -p json -p pretty
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+headless: BROWSER=headless
+
+json: --format json --out=logs/report.json
+html: --format html --out=logs/report.html
+pretty: --format pretty
+progress: --format progress
